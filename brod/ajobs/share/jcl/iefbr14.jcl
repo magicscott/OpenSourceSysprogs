@@ -5,3 +5,21 @@
 //SYSPRINT DD *
 //STEP2    EXEC PGM=IEFBR14                                             00040000
 //SYSPRINT DD *
+//StepName EXEC PGM=IDCAMS
+//SYSPRINT DD   SYSOUT=SYSOUT
+//SYSIN    DD   *
+    DEFINE CLUSTER -
+       (NAME (Name) -
+       STORAGECLASS (StorageClass) -
+       MANAGEMENTCLASS (ManagementClass) -
+       DATACLASS (DataClass))
+/*
+//StepName EXEC PGM=IDCAMS
+//INPUT    DD   DSN=DataSetName,DISP=SHR,DCB=(DataControlBlock)
+//SYSPRINT DD   SYSOUT=SYSOUT
+//SYSIN    DD   *
+    REPRO -
+       INFILE (Input) -
+       OUTDATASET (OutDataSet) -
+       ERRORLIMIT (ErrorLimit)
+/*
