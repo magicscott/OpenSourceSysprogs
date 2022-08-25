@@ -1,0 +1,10 @@
+/* REXX */
+/* Performing some basic TSO commands on PS file */
+  SAY "ENTER THE HIGHLEVEL QUALIFIER"
+  PULL HLQ
+  SRCFILE = HLQ||'.SAMPLE.FILE'
+  DSTFILE = HLQ||'.SAMPLE.FILE.BKUP'
+  ADDRESS TSO
+  "RENAME '"SRCFILE"' '"DSTFILE"' "
+/* TEST CHANGE */
+EXIT 0
