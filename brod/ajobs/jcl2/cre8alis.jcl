@@ -1,0 +1,9 @@
+//BRODSCO  JOB (000),'SCOTT BROD',CLASS=A,MSGCLASS=D,
+//     MSGLEVEL=(1,1),NOTIFY=&SYSUID
+//*.+....1....+....2....+....3....+....4....+....5....+....6....+....7..
+//MALIAS   EXEC PGM=IDCAMS
+//SYSPRINT DD  SYSOUT=*
+//SYSIN    DD  *
+ DEF ALIAS(NAME(OMVS) REL(PITT.USERCAT)) CAT(CATALOG.ALTER.MASTER)
+/*
+//*
